@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolAppAPI", "SchoolAppAPI\SchoolAppAPI.csproj", "{F1CE499D-74C5-40CC-9E96-AE41556D75D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolAppTests", "SchoolAppTests\SchoolAppTests.csproj", "{1556E90B-15A4-450B-A4E7-D138B5D0F752}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolApp", "SchoolApp\SchoolApp.csproj", "{F7D7F7C4-35A3-4114-A51E-C6C6C8663605}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1CE499D-74C5-40CC-9E96-AE41556D75D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1CE499D-74C5-40CC-9E96-AE41556D75D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1CE499D-74C5-40CC-9E96-AE41556D75D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1CE499D-74C5-40CC-9E96-AE41556D75D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1556E90B-15A4-450B-A4E7-D138B5D0F752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1556E90B-15A4-450B-A4E7-D138B5D0F752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1556E90B-15A4-450B-A4E7-D138B5D0F752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1556E90B-15A4-450B-A4E7-D138B5D0F752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7D7F7C4-35A3-4114-A51E-C6C6C8663605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7D7F7C4-35A3-4114-A51E-C6C6C8663605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7D7F7C4-35A3-4114-A51E-C6C6C8663605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7D7F7C4-35A3-4114-A51E-C6C6C8663605}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
