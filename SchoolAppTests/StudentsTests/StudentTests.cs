@@ -1,3 +1,4 @@
+using SchoolApp.Person;
 using SchoolApp.Students;
 
 namespace SchoolAppTests;
@@ -9,7 +10,7 @@ public class Tests
     {
         
     }
-    Student student = new Student();   
+    RegisterNewStudent student = new RegisterNewStudent();   
 
     [Test]
     public void Given_NameLastNameAndAge_When_RegisterANewStudent_ThenSaveIt()
