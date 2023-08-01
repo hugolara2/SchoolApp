@@ -3,7 +3,7 @@ using SchoolApp.Students;
 
 namespace SchoolAppTests;
 
-public class StudentTests
+public class TeacherTests
 {
     [SetUp]
     public void Setup()
