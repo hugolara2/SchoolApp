@@ -9,7 +9,7 @@ public class RegisterNewStudent : Student
     
     public List<Student> RegisterNewStudents(string name, int age, string curp)
     {
-        Name = name;
+        FirstName = name;
         Age = age;
         Curp = curp;
         

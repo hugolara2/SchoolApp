@@ -74,8 +74,14 @@ public abstract class Person
         set => _email = value;
     }
 
+    public TypeOfCandidate Candidate
+    {
+        get => _candidate;
+        set => _candidate = value;
+    }
+
     public abstract void FirstRegistration(string firstName, string lastName, string email);
-    public abstract void ExtraInfoRegistration(string phone, TypeOfCandidate candidate);
+    public abstract void ExtraInfoRegistration(int id, string phone, TypeOfCandidate candidate);
 
 }
 

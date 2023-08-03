@@ -8,17 +8,30 @@ public class Student : Person
     public List<Student> students = new();
     public override void FirstRegistration(string firstName, string lastName, string email)
     {
-        FirstName = firstName;
-        LastName = lastName;
-        Email = email;
+        if (students.Count == 0)
+        { 
+            students.Add(new Student());
+            students[0].FirstName = firstName;
+            students[0].LastName = lastName;
+            students[0].Email = email;
+        }
+        else if(students.Count >= 1)
+        {
+            students.Add(new Student());
+            var i = students.Count - 1;
+            
+            students[i].FirstName = firstName;
+            students[i].LastName = lastName;
+            students[i].Email = email;
+            
+        }
+            
         
-        students.Add(new Student());
     }
-    
-    
 
-    public override void ExtraInfoRegistration(string phone, TypeOfCandidate candidate)
+    public override void ExtraInfoRegistration(int id, string phone, TypeOfCandidate candidate)
     {
-        throw new NotImplementedException();
+        students[id].Phone = phone;
+        students[id].Candidate = candidate;
     }
 }
