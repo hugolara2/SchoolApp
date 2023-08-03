@@ -11,4 +11,14 @@ public class Teacher : Person
         get => _rfc;
         set => _rfc = value;
     }
+
+    public override void FirstRegistration(string firstName, string lastName, string email)
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void ExtraInfoRegistration(int id, string phone, TypeOfCandidate candidate)
+    {
+        throw new NotImplementedException();
+    }
 }
