@@ -2,17 +2,23 @@ namespace SchoolApp.Students;
 
 using Person;
 
+
 public class Student : Person
 {
-    private string _curp;
-
-    public string Curp
+    public List<Student> students = new();
+    public override void FirstRegistration(string firstName, string lastName, string email)
     {
-        get => _curp;
-        set => _curp = value;
+        FirstName = firstName;
+        LastName = lastName;
+        Email = email;
+        
+        students.Add(new Student());
     }
+    
+    
 
-    
-    
-    
+    public override void ExtraInfoRegistration(string phone, TypeOfCandidate candidate)
+    {
+        throw new NotImplementedException();
+    }
 }
