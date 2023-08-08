@@ -2,7 +2,6 @@ namespace SchoolApp.Students;
 
 using Person;
 
-
 public class Student : Person
 {
     public List<Student> students = new();
