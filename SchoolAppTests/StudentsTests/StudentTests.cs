@@ -17,8 +17,6 @@ public class StudentTests
     public void Given_NameLastNameAndEmail_When_FirstRegistration_ThenSaveIt()
     {
         //Arrange
-        
-
         var name = "Hugo";
         var lastName = "Lara";
         var email = "lalala";
@@ -40,6 +38,7 @@ public class StudentTests
         var expected = student.students[0].FirstName;
         var expected1 = student.students[1].FirstName;
         var expected2 = student.students[2].FirstName;
+        
         //Assert
         Assert.IsNotEmpty(student.students);
         Assert.That(name, Is.EqualTo(expected));
@@ -67,7 +66,7 @@ public class StudentTests
         student.ExtraInfoRegistration(id,phone,candidate);
         student.ExtraInfoRegistration(id1,phone1,candidate1);
         student.ExtraInfoRegistration(id2,phone2,candidate2);
-        
+
         //Assert
         Assert.That(phone, Is.EqualTo(student.students[id].Phone));
         Assert.That(phone1, Is.EqualTo(student.students[id1].Phone));

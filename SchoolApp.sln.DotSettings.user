@@ -1,4 +1,7 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=84148b68_002D46a5_002D4b20_002Da3c7_002Db900a1a0d8b5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Given_NameLastNameAndAge_When_RegisterANewStudent_ThenSaveIt" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;ProjectFile&gt;1556E90B-15A4-450B-A4E7-D138B5D0F752/d:StudentsTests/f:StudentTests.cs&lt;/ProjectFile&gt;
+  &lt;Or&gt;
+    &lt;ProjectFile&gt;1556E90B-15A4-450B-A4E7-D138B5D0F752/d:StudentsTests/f:StudentTests.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;1556E90B-15A4-450B-A4E7-D138B5D0F752/d:TeacherTests/f:TeacherTests.cs&lt;/ProjectFile&gt;
+  &lt;/Or&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
