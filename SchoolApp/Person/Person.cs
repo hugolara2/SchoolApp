@@ -1,6 +1,6 @@
 namespace SchoolApp.Person;
 
-public abstract class Person
+public class Person
 {
     private string _firstname;
     private string _lastName;
@@ -80,8 +80,38 @@ public abstract class Person
         set => _candidate = value;
     }
 
-    public abstract void FirstRegistration(string firstName, string lastName, string email);
-    public abstract void ExtraInfoRegistration(int id, string phone, TypeOfCandidate candidate);
+    public List<Person>? persons = new();
+    public void FirstRegistration(string firstName, string lastName, string email)
+    {
+        if (persons.Count == 0)
+        { 
+            persons.Add(new Person());
+            persons[0].FirstName = firstName;
+            persons[0].LastName = lastName;
+            persons[0].Email = email;
+        }
+        else if(persons.Count >= 1)
+        {
+            persons.Add(new Person());
+            var i = persons.Count - 1;
+            
+            persons[i].FirstName = firstName;
+            persons[i].LastName = lastName;
+            persons[i].Email = email;
+            
+        }
+            
+        
+    }
+
+    public void ExtraInfoRegistration(int id, string phone, TypeOfCandidate candidate)
+    {
+        if (persons != null)
+        {
+            persons[id].Phone = phone;
+            persons[id].Candidate = candidate;
+        }
+    }
 
 }
 

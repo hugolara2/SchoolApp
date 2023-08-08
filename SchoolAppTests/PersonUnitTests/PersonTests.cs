@@ -1,17 +1,17 @@
+using NUnit.Framework.Internal;
 using SchoolApp.Person;
-using SchoolApp.Teachers;
+using SchoolApp.Students;
 
-namespace SchoolAppTests;
+namespace SchoolAppTests.PersonUnitTests;
 
-public class TeacherTests
+public class PersonTests
 {
     [SetUp]
     public void Setup()
     {
         
     }
-
-    Teacher teacher = new Teacher();
+    Student person = new Student();
     
     [Test]
     public void Given_NameLastNameAndEmail_When_FirstRegistration_ThenSaveIt()
@@ -31,16 +31,16 @@ public class TeacherTests
 
         
         //Act
-        teacher.FirstRegistration(name, lastName, email);
-        teacher.FirstRegistration(name1, lastName1, email1);
-        teacher.FirstRegistration(name2, lastName2, email2);
+        person.FirstRegistration(name, lastName, email);
+        person.FirstRegistration(name1, lastName1, email1);
+        person.FirstRegistration(name2, lastName2, email2);
         
-        var expected = teacher.teachers[0].FirstName;
-        var expected1 = teacher.teachers[1].FirstName;
-        var expected2 = teacher.teachers[2].FirstName;
+        var expected = person.persons[0].FirstName;
+        var expected1 = person.persons[1].FirstName;
+        var expected2 = person.persons[2].FirstName;
         
         //Assert
-        Assert.IsNotEmpty(teacher.teachers);
+        Assert.IsNotEmpty(person.persons);
         Assert.That(name, Is.EqualTo(expected));
         Assert.That(name1, Is.EqualTo(expected1));
         Assert.That(name2, Is.EqualTo(expected2));
@@ -63,14 +63,14 @@ public class TeacherTests
         var candidate2 = TypeOfCandidate.Student;
         
         //Act
-        teacher.ExtraInfoRegistration(id,phone,candidate);
-        teacher.ExtraInfoRegistration(id1,phone1,candidate1);
-        teacher.ExtraInfoRegistration(id2,phone2,candidate2);
+        person.ExtraInfoRegistration(id,phone,candidate);
+        person.ExtraInfoRegistration(id1,phone1,candidate1);
+        person.ExtraInfoRegistration(id2,phone2,candidate2);
 
         //Assert
-        Assert.That(phone, Is.EqualTo(teacher.teachers[id].Phone));
-        Assert.That(phone1, Is.EqualTo(teacher.teachers[id1].Phone));
-        Assert.That(phone2, Is.EqualTo(teacher.teachers[id2].Phone));
+        Assert.That(phone, Is.EqualTo(person.persons[id].Phone));
+        Assert.That(phone1, Is.EqualTo(person.persons[id1].Phone));
+        Assert.That(phone2, Is.EqualTo(person.persons[id2].Phone));
         
     }
     
