@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolAppTests", "SchoolApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolApp", "SchoolApp\SchoolApp.csproj", "{F7D7F7C4-35A3-4114-A51E-C6C6C8663605}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolAppData", "SchoolAppData\SchoolAppData.csproj", "{987310D4-F782-465D-880A-43CB5A6C6816}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{F7D7F7C4-35A3-4114-A51E-C6C6C8663605}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7D7F7C4-35A3-4114-A51E-C6C6C8663605}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7D7F7C4-35A3-4114-A51E-C6C6C8663605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{987310D4-F782-465D-880A-43CB5A6C6816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987310D4-F782-465D-880A-43CB5A6C6816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987310D4-F782-465D-880A-43CB5A6C6816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987310D4-F782-465D-880A-43CB5A6C6816}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
